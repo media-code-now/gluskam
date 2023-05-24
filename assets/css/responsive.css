@@ -1,0 +1,422 @@
+/* Normal desktop :1700px. */
+@media (min-width: 1700px) and (max-width: 1920px) {
+
+
+}
+/* Normal desktop :1200px. */
+@media (min-width: 1500px) and (max-width: 1700px) {
+
+
+
+}
+/* Normal desktop :1200px. */
+@media (min-width: 1365px) and (max-width: 1499px) {
+
+
+
+}
+/* Normal desktop :1170px. */
+@media (min-width: 1170px) and (max-width: 1299px) {
+
+
+
+
+
+
+
+}
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1170px) {
+.about-title p {
+    font-size: 15px;
+}
+.service-title p {
+    font-size: 13px;
+}
+.testi-text p {
+    font-size: 14px;
+    width: 100%;
+}
+.left-title p {
+    font-size: 13px;
+}
+.left-title h3 {
+    font-size: 25px;
+}
+.left-title h5 {
+    font-size: 18px;
+}
+.resume-tile h3 {
+    font-size: 20px;
+}
+.box-top.upper h2 {
+    left: 0;
+}
+.blog-title p {
+    font-size: 14px;
+}
+.contact-area {
+    padding: 0 0px 100px 0px;
+}
+.contact.thumb img {
+    width: 100%;
+}
+.blog-areas .blogs-content p {
+    font-size: 14px;
+}
+.blog-areas .blogs-content p {
+    font-size: 14px;
+}
+.blog-areas .blogs-singles-boxs h2 a {
+    font-size: 22px;
+}
+.paginationss-title ul li a i {
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    width: 30px;
+}
+.paginationss-title ul li {
+    margin-right: 0;
+}
+
+
+
+
+
+
+}
+/* small mobile :768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+.about-title h3 {
+    font-size: 25px;
+}
+.about-title p {
+    font-size: 12px;
+}
+.box-top.upper h2 {
+    left: 0;
+}
+.resume-tile span {
+    display: none;
+}
+.resume-tile h3 {
+    font-size: 17px;
+}
+.resume-tile h5 {
+    font-size: 12px;
+}
+.resume-tile p {
+    font-size: 14px;
+}
+.single-counter-box {
+    margin-bottom: 30px;
+}
+.contact-area {
+    padding: 40px 0px 100px 0px;
+}
+.contact.thumb img {
+    width: 100%;
+}
+.blog-left ul li span {
+    font-size: 11px;
+}
+.blog-areas .blogs-content p {
+    font-size: 12px;
+}
+.blog-areas .blogs-singles-boxs h2 a {
+    font-size: 20px;
+}
+.paginationss-title ul li {
+    margin-right: 0;
+}
+.paginationss-title ul li a i {
+    font-size: 15px;
+    height: 35px;
+    line-height: 35px;
+    width: 35px;
+}
+.blog-left ul li span {
+    margin: 0;
+}
+li.bf::before {
+    top: 15px;
+    left: -7px;
+}
+.form-button {
+    text-align: center;
+    margin: 25px 0;
+}
+
+
+
+
+
+}
+/* small mobile :600px. */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+.slider-title h1 {
+    font-size: 70px;
+}
+.slider-title h3 {
+    font-size: 25px;
+}
+.slider-title h3::before {
+    top: 17px;
+}
+.slider-title p {
+    font-size: 18px;
+}
+.about-title h3 {
+    font-size: 26px;
+}
+.about-title p {
+    font-size: 14px;
+}
+.right-btn {
+    text-align: center;
+}
+#tab-one:checked ~ .tabs #tab-one-label, #tab-two:checked ~ .tabs #tab-two-label, #tab-three:checked ~ .tabs #tab-three-label {
+    background-color: #009E66;
+}
+.shap-img {
+    display: none;
+}
+.shaps-imgs {
+    display: none;
+}
+.box-top.upper h2 {
+    left: 0;
+}
+.single-counter-box {
+    margin-bottom: 30px;
+}
+.left-title h3 {
+    font-size: 25px;
+}
+.left-title p {
+    font-size: 15px;
+}
+.left-button {
+    text-align: center;
+}
+.contact-area {
+    padding: 0 0px 100px 0px;
+}
+.form-button {
+    text-align: center;
+}
+.copy-right p {
+    font-size: 13px;
+}
+.copy-right-icon {
+    margin-top: -35px;
+}
+.copy-right-icon ul li a {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+}
+.form-button {
+    margin: 25px 0;
+}
+
+
+
+}
+
+/* small mobile :320px. */
+@media only screen and (min-width: 320px) and (max-width: 599px) {
+.slider-title h1 {
+    font-size: 50px;
+    margin-left: 15px;
+}
+.slider-area::before {
+    display: none;
+}
+.slider-title h3 {
+    font-size: 25px;
+    margin-left: 15px;
+}
+.slider-title h3::before {
+    display: none;
+}
+.slider-title p {
+    font-size: 15px;
+    margin-left: 15px;
+}
+.slider-button {
+    text-align: center;
+}
+.slider-button a {
+    padding: 10px 30px;
+}
+.about-title h3 {
+    font-size: 25px;
+}
+.about-title p {
+    font-size: 11px;
+}
+.about-title h5 {
+    font-size: 18px;
+}
+.right-btn a {
+    padding: 8px 20px;
+}
+.right-btn {
+    text-align: center;
+}
+.service-title p {
+    font-size: 13px;
+}
+#tab-one:checked ~ .tabs #tab-one-label, 
+#tab-two:checked ~ .tabs #tab-two-label, 
+#tab-three:checked ~ .tabs #tab-three-label {
+    background-color: #009E66;
+    border-bottom: 1px solid #009E66;
+}
+.accordion-tabs .tabs .tab {
+    padding: 5px 15px;
+    font-size: 10px;
+}
+.box-top.upper h2 {
+    left: 0;
+}
+.box-top h2 {
+    font-size: 22px;
+}
+.resume-tile span {
+    display: none;
+}
+.resume-tile h3 {
+    font-size: 13px;
+}
+.resume-tile h5 {
+    font-size: 10px;
+}
+.shap-img {
+    display: none;
+}
+.shaps-imgs {
+    display: none;
+}
+.resume-tile p {
+    font-size: 9px;
+    line-height: 1.5;
+}
+.resume-section {
+    padding: 25px 0px 0 0px;
+}
+.portfolio_menu ul li {
+    font-size: 13px;
+    margin: 0 3px;
+}
+.single-counter-box {
+    margin-bottom: 30px;
+}
+.section-title h3 {
+    font-size: 35px;
+}
+.left-title h3 {
+    font-size: 20px;
+}
+.left-title h5 {
+    font-size: 15px;
+}
+.left-title p {
+    font-size: 13px;
+}
+.left-button a {
+    padding: 7px 15px;
+}
+.left-button {
+    text-align: center;
+}
+.testi-title h2 {
+    font-size: 15px;
+}
+.testi-title span {
+    font-size: 10px;
+}
+.testi-text p {
+    font-size: 12px;
+    width: 100%;
+}
+.blog-title p {
+    font-size: 14px;
+}
+.contact-area {
+    padding: 0px 0px 100px 0px;
+}
+.contact.thumb img {
+    width: 100%;
+}
+.form-button {
+    text-align: center;
+}
+.copy-right-icon ul li a {
+    font-size: 12px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+}
+.copy-right-icon {
+    margin-top: 20px;
+}
+.blog-left ul li span {
+    font-size: 9px;
+    margin: 0;
+}
+li.bf::before {
+    top: 16px;
+    left: -7px;
+}
+.blog-areas .blogs-content p {
+    font-size: 12px;
+}
+.blog-areas .blogs-singles-boxs h2 a {
+    font-size: 17px;
+}
+.paginationss-title ul li {
+    margin-right: 0;
+}
+.paginationss-title ul li a i {
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    width: 30px;
+}
+.form-button {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.form-button button {
+    padding: 8px 20px;
+}
+
+
+
+
+
+
+
+
+
+}
+/* small mobile :320px. */
+@media only screen and (min-width: 320px) and (max-width: 991px) {
+
+.main-header {
+    display: none!important;
+}
+header.main-header {
+    display: none;
+}
+
+
+
+
+
+}
+
