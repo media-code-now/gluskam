@@ -72,7 +72,17 @@
     position: relative;
     overflow: hidden;
 }
-
+.slider-area::before {
+    content: '';
+    position: absolute;
+    right: -175px;
+    top: 50%;
+    height: 350px;
+    width: 350px;
+    background: #fff;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
 .slider-title h3 {
     font-size: 40px;
     color: #fff;
