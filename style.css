@@ -299,8 +299,8 @@ a.video-vemo-icon.venobox.vbox-item:hover i {
     font-family: 'Montserrat', sans-serif;
 }
 .about-title p {
-    font-size: 16px;
-    color: #7c838e;
+    font-size: 20px !important;
+    color: #aeb0b4;
     margin-bottom: 25px;
 }
 .right-box.upper {
