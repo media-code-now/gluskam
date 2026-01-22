@@ -1,33 +1,88 @@
+/* ============================================================== */
+/* iOS 26 Inspired Design System */
+/* ============================================================== */
+
+/* Global iOS Styles */
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: #ffffff;
+    color: #1d1d1f;
+}
+
+/* iOS 26 Inspired Styles - Black Theme */
 .main-header {
     margin-bottom: -83px;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     overflow: hidden;
-    z-index: 99;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 .nav-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 12px 0;
 }
+
+/* Logo Styling - Dark Theme */
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo a {
+    display: inline-block;
+    line-height: 0;
+}
+
+.header-logo img {
+    height: 40px;
+    width: auto;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    filter: brightness(0) invert(1);
+}
+
+.header-logo img:hover {
+    opacity: 0.8;
+}
+
 .heder-menu ul li {
     display: inline-block;
-    margin-right: 15px;
+    margin-right: 20px;
 }
 .heder-menu ul {
     display: inline-block;
 }
 .heder-menu ul li a {
     display: inline-block;
-    font-size: 16px;
-    color: #fff;
-    font-weight: 500;
-    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #f5f5f7;
+    font-weight: 400;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     text-transform: capitalize;
-    padding: 30px 0 20px;
-    transition: .5s;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 .heder-menu ul li a:hover {
-    color: #009E66;
+    color: #30d158;
+    background: rgba(48, 209, 88, 0.15);
 }
 .header-icon {
     display: inline-block;
@@ -61,150 +116,220 @@
    background: #FFBA00;
 }
 /*<!-- ============================================================== -->
-<!-- Start  slider-area   Css -->
+<!-- Start  slider-area   Css - iOS 26 Style - Black Theme -->
 <!-- ============================================================== -->*/
 .slider-area {
-    background: url(assets/images/hero.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.65)), url(assets/images/hero.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 900px;
+    background-attachment: fixed;
+    min-height: 100vh;
+    padding-top: 120px;
     position: relative;
     overflow: hidden;
 }
+
 .slider-area::before {
     content: '';
     position: absolute;
-    right: -175px;
-    top: 50%;
-    height: 350px;
-    width: 350px;
-    background: #fff;
+    right: -200px;
+    top: 30%;
+    height: 600px;
+    width: 600px;
+    background: linear-gradient(135deg, rgba(48, 209, 88, 0.15) 0%, rgba(0, 158, 102, 0.12) 100%);
     border-radius: 50%;
     transform: translateY(-50%);
+    filter: blur(80px);
+    z-index: 0;
 }
-.slider-title h3 {
-    font-size: 40px;
-    color: #fff;
-    font-weight: 600;
-    text-transform: capitalize;
-    font-family: 'Montserrat', sans-serif;
-    margin-left: 60px;
-    position: relative;
-}
-.slider-title h3::before {
+
+.slider-area::after {
+    content: '';
     position: absolute;
-    content: "";
-    top: 27px;
-    left: -65px;
-    height: 3px;
-    width: 55px;
-    background: #009E66;
-}
-.slider-title h3 span {
-    color: #000616;
+    left: -200px;
+    bottom: 20%;
+    height: 500px;
+    width: 500px;
+    background: linear-gradient(135deg, rgba(0, 158, 102, 0.12) 0%, rgba(48, 209, 88, 0.15) 100%);
     border-radius: 50%;
-    background: #FFBA00;
-    padding: 0px 10px;
-    margin-right: 15px;
+    filter: blur(80px);
+    z-index: 0;
 }
-.slider-title h1 {
-    font-size: 100px;
-    font-weight: 600;
-    font-family: 'Montserrat', sans-serif;
-    color: #ffffff;
-    text-transform: capitalize;
-    margin: 0 0 2px;
-}
-.slider-title h1 span {
-    color: #009E66;
-    font-family: sans-serif;
-}
-.slider-title p {
-    font-size: 24px;
-    color: #fff;
-    font-weight: 500;
-    font-family: 'Montserrat', sans-serif;
-    width: 90%;
-    padding: 15px 0;
-    line-height: 1.5;
-    margin-bottom: 15px;
-}
-.slider-button a {
-    display: inline-block;
-    background: #009e66;
-    color: #fff;
-    padding: 15px 40px;
-    font-size: 16px;
-    font-weight: 500;
-    transition: .5s;
-    border: 1px solid #009e66;
-    font-family: 'Montserrat', sans-serif;
-}
-.slider-button a::before {
-    position: absolute;
-    content: "";
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    background: #127653;
-    transform: scale(0);
-    transition: .5s;
-    z-index: -1;
-    border-radius: 5px;
-}
-.slider-button a:hover::before{
-  transform: scale(1);
-}
-.slider-button a:hover {
-    color: #fff;
-    border: 1px solid #127653;
-    background: #127653;
-} 
-.slider-button a i {
-    display: inline-block;
-    padding-left: 8px;
-}
-.bottom-btn {
-    position: absolute;
-    bottom: 45px;
-}
-.slider-icon {
-    position: absolute;
-    bottom: 45px;
-    right: 80px;
+
+.single-slider-box {
+    position: relative;
     z-index: 1;
 }
-.bottom-btn a {
+
+.slider-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.slider-title h1 {
+    font-size: 64px;
+    font-weight: 600;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #ffffff;
+    text-transform: none;
+    margin: 0 0 24px;
+    letter-spacing: -1.5px;
+    line-height: 1.1;
+}
+
+.slider-title h1 span {
+    color: #30d158;
+    display: block;
+    font-size: 72px;
+    margin-top: 8px;
+}
+
+.slider-title h3 {
+    font-size: 48px;
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: none;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    letter-spacing: -0.5px;
+    line-height: 1.1;
+    margin-left: 0;
+    position: relative;
+}
+
+.slider-title h3::before {
+    display: none;
+}
+
+.slider-title p {
+    font-size: 21px;
+    color: #a1a1a6;
+    font-weight: 400;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    padding: 0;
+    line-height: 1.5;
+}
+
+.slider-button {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.slider-button a {
     display: inline-block;
-    color: #fff;
-    text-transform: uppercase;
+    padding: 14px 32px;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 12px;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
 }
-.bottom-btn a span {
-    margin-left: 15px;
+
+.slider-button a.btn-primary {
+    background: #30d158;
+    color: #ffffff;
+    border: 2px solid #30d158;
 }
-.slider-icon ul {
-    display: inline-block;
+
+.slider-button a.btn-primary:hover {
+    background: #32d760;
+    border-color: #32d760;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(48, 209, 88, 0.4);
 }
-.slider-icon ul li {
-    display: inline-block;
-    list-style: none;
-    margin: 0 5px 0;
+
+.slider-button a.btn-secondary {
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0.3);
 }
-.slider-icon ul li a {
-    display: inline-block;
-    font-size: 16px;
-    color: #fff;
+
+.slider-button a.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: translateY(-2px);
 }
-.slider-video {
-    position: absolute;
-    bottom: 35px;
-    text-align: center;
-    left: 0;
-    right: 0;
+
+.slider-button a::before {
+    display: none;
 }
+
+/* Remove old unused slider elements */
+.slider-icon,
+.slider-video,
+.bottom-btn {
+    display: none;
+}
+
+/* iOS 26 Hero Responsive Styles */
+@media only screen and (max-width: 991px) {
+    .header-logo img {
+        height: 35px;
+    }
+    
+    .slider-title h1 {
+        font-size: 48px;
+    }
+    
+    .slider-title h1 span {
+        font-size: 52px;
+    }
+    
+    .slider-title p {
+        font-size: 19px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .header-logo img {
+        height: 32px;
+    }
+    
+    .slider-area {
+        padding-top: 100px;
+        min-height: 90vh;
+        background-attachment: scroll;
+    }
+    
+    .slider-content {
+        padding: 40px 15px;
+    }
+    
+    .slider-title h1 {
+        font-size: 36px;
+        letter-spacing: -0.5px;
+    }
+    
+    .slider-title h1 span {
+        font-size: 40px;
+    }
+    
+    .slider-title p {
+        font-size: 17px;
+        margin-bottom: 32px;
+    }
+    
+    .slider-button {
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .slider-button a {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+}
+
 .slider-video-icon a, .about-icon a {
     width: 60px;
     height: 60px;
@@ -232,49 +357,57 @@ a.video-vemo-icon.venobox.vbox-item:hover i {
 
 
 /*<!-- ============================================================== -->
-<!-- Start  section-title  Css -->
+<!-- Start  section-title  Css - iOS 26 Typography -->
 <!-- ============================================================== -->*/
 .section-title {
     margin: auto;
     text-align: center;
     z-index: 99;
-    margin-bottom: 68px;
+    margin-bottom: 48px;
 }
 .section-title h5 {
-    color: #7c838e;
-    font-size: 16px;
+    color: #86868b;
+    font-size: 13px;
     text-transform: uppercase;
-    font-weight: 500;
-    margin: 0 0 15px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    margin: 0 0 8px;
     position: relative;
     display: inline-block;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 .section-title h3 {
-    font-size: 46px;
+    font-size: 48px;
     text-transform: none;
-    font-weight: 700;
+    font-weight: 600;
     position: relative;
-    color: #fff;
+    color: #1d1d1f;
+    letter-spacing: -0.5px;
+    line-height: 1.1;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 .section-title h3::before {
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: -65px;
-    height: 45px;
-    width: 3px;
-    background: #009e66;
+    display: none;
 }
 .section-title h3 span {
-    color: #009E66;
-    font-family: sans-serif;
+    color: #30d158;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Dark section title override */
+.service-area .section-title h3,
+.service-area .section-title h5 {
+    color: #ffffff;
+}
+.service-area .section-title h3 span {
+    color: #30d158;
 }
 /*<!-- ============================================================== -->
-<!-- Start .about-area  Css -->
+<!-- Start .about-area  Css - iOS 26 Style -->
 <!-- ============================================================== -->*/
 .about-area {
-    background: #101010;
-    padding: 85px 0px 0px 0px;
+    background: #f5f5f7;
+    padding: 80px 0;
 }
 .about-thumb img {
     width: 100%;
@@ -283,25 +416,29 @@ a.video-vemo-icon.venobox.vbox-item:hover i {
     margin-top: 20px;
 }
 .about-title h5 {
-    font-size: 22px;
+    font-size: 16px;
     font-weight: 500;
-    color: #009e66;
-    margin-bottom: 17px;
-    text-transform: capitalize;
-    font-family: 'Montserrat', sans-serif;
+    color: #0071e3;
+    margin-bottom: 12px;
+    text-transform: none;
+    letter-spacing: -0.2px;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 .about-title h3 {
     font-size: 32px;
-    color: #fff;
+    color: #1d1d1f;
     font-weight: 600;
-    text-transform: capitalize;
-    margin-bottom: 15px;
-    font-family: 'Montserrat', sans-serif;
+    text-transform: none;
+    margin-bottom: 16px;
+    letter-spacing: -0.4px;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 .about-title p {
-    font-size: 20px !important;
-    color: #aeb0b4;
-    margin-bottom: 25px;
+    font-size: 17px !important;
+    color: #6e6e73;
+    margin-bottom: 24px;
+    line-height: 1.6;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 .right-box.upper {
     border-style: solid;
@@ -412,77 +549,95 @@ a.video-vemo-icon.venobox.vbox-item:hover i {
     color: #00AE70;
 }
 /*<!-- ============================================================== -->
-<!-- Start  service-area  Css -->
+<!-- Start  service-area  Css - iOS 26 Cards - Black Theme -->
 <!-- ============================================================== -->*/
 .service-area {
-    background: #101010;
-    padding: 70px 0 70px;
+    background: #000000;
+    padding: 80px 0;
 }
 .service-area .section-title {
-    margin-bottom: 115px;
+    margin-bottom: 60px;
 }
 .single-service-box {
-    padding: 50px 40px 30px 40px;
-    background: #212121;
-    transition: .5s;
+    padding: 32px 28px;
+    background: #1c1c1e;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     overflow: hidden;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 .single-service-box:hover{
-   background: #009E66; 
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(48, 209, 88, 0.3);
+    border-color: rgba(48, 209, 88, 0.4);
 } 
 .single-service-box:hover .service-icon i{
-    color: #fff;
+    color: #30d158;
+    transform: scale(1.05);
  }
  .single-service-box:hover .service-title p{
-    color: #fff;
+    color: #ffffff;
  }
 .service-icon i {
     display: inline-block;
-    margin: 0px 0px 37px 0px;
-    font-size: 45px;
-    color: #009E66;
-    transition: .5s;
+    margin: 0 0 24px 0;
+    font-size: 44px;
+    color: #30d158;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.service-icon img {
+    display: block;
+    margin: 0 auto 24px;
+    max-width: 180px;
+    height: auto;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.single-service-box:hover .service-icon img {
+    transform: scale(1.05);
 }
 .service-title h2 {
-    font-size: 22px;
-    color: #fff;
+    font-size: 24px;
+    color: #ffffff;
     font-weight: 600;
-    text-transform: capitalize;
-    font-family: 'Montserrat', sans-serif;
+    text-transform: none;
+    letter-spacing: -0.3px;
+    margin-bottom: 12px;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 .service-title p {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
-    color: #7c838e;
-    line-height: 28px;
-    transition: .5s;
+    color: #a1a1a6;
+    line-height: 1.6;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 .service-button a {
     display: inline-block;
-    color: #212121;
+    color: #30d158;
     font-size: 14px;
-    font-weight: 400;
-    text-transform: uppercase;
+    font-weight: 500;
+    text-transform: none;
     position: relative;
-    left: -85px;
+    padding: 10px 16px;
+    border-radius: 8px;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 .service-button a::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: -30px;
-    height: 2px;
-    width: 25px;
-    background: #009e66;
-    transition: .5s;
+    content: '→';
+    position: relative;
+    margin-left: 6px;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    font-size: 16px;
 }
 .single-service-box:hover .service-button a{
-    left: 0;
-    color: #fff;
+    background: rgba(48, 209, 88, 0.15);
 }
 .single-service-box:hover .service-button a::after{
-    background: #fff;
+    margin-left: 10px;
 }
 /*<!-- ============================================================== -->
 <!-- Start  resume-section   Css -->

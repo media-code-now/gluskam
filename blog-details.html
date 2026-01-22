@@ -278,7 +278,7 @@
 		<div class="row">
 			<div class="col-lg-6">
 				<div class="copy-right">
-					<p>Copyright 2022 All Right Reserved</p>
+					<p>Copyright <span id="copyright-year"></span> All Right Reserved</p>
 				</div>
 			</div>
 			<div class="col-lg-6">
@@ -404,6 +404,11 @@ $('.aa').counterUp({
         j.preventDefault();
     });
 })(jQuery);
+	</script>
+
+	<script>
+		// Auto-update copyright year
+		document.getElementById('copyright-year').textContent = new Date().getFullYear();
 	</script>
 	
 </body>

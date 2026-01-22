@@ -50,7 +50,9 @@
 				<div class="col-lg-12">
 					<div id="sticky-header" class="nav-menu">
 						<div class="header-logo">
-							<a class="main_sticky" href="index.html"></a>
+							<a class="main_sticky" href="index.html">
+								<img src="assets/images/logo.png" alt="Gluska Management Logo">
+							</a>
 						</div>
 						<div class="heder-menu">
 							<ul>
@@ -85,38 +87,24 @@
 	</div>
 </div>
 <!-- ============================================================== -->
-<!-- Start -slider-area -->
+<!-- Start -slider-area - iOS 26 Hero -->
 <!-- ============================================================= -->
 <div class="slider-area d-flex align-items-center" id="home">
 	<div class="container">
 		<div class="row d-flex align-items-center">
-			<div class="single-slider-box">
-				<div class="slider-content">
-					<div class="slider-title">
-						<!-- <h1>Hello<span>.</span></h1>
-						<h3>I'am Emma Watson</h3>
-						<p>Professional Graphics Designer</p> -->
+			<div class="col-lg-12">
+				<div class="single-slider-box">
+					<div class="slider-content text-center">
+						<div class="slider-title">
+							<h1>Welcome to<br><span>Gluska Management</span></h1>
+							<p>Pioneering natural wellness solutions in Las Vegas.<br>Transforming lives through premium CBD, essential oils, and mindfulness products.</p>
+						</div>
+						<div class="slider-button">
+							<a href="#services" class="btn-primary">Explore Our Brands</a>
+							<a href="#about" class="btn-secondary">Learn More</a>
+						</div>
 					</div>
 				</div>
-				<div class="slider-button">
-					<!-- <a href="#"><i class="flaticon-download"></i> Download CV</a> -->
-				</div>
-			</div>
-		</div>
-		<!-- <div class="bottom-btn">
-			<a href="#">Eng <span>aus</span></a>
-		</div> -->
-		<!-- <div class="slider-icon">
-			<ul>
-				<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-				<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-				<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-				<li><a href="#"><i class="fab fa-instagram"></i></a></li>
-			</ul>
-		</div> -->
-		<div class="slider-video">
-			<div class="slider-video-icon">
-				<!-- <a class="video-vemo-icon venobox vbox-item" data-vbtype="youtube" data-autoplay="true" href="https://youtu.be/BS4TUd7FJSg"><i class="fas fa-play"></i></a> -->
 			</div>
 		</div>
 	</div>
@@ -214,6 +202,56 @@
 					</div>
 					<div class="service-button">
 						<a href="https://bloomstem.com/">Visit Website</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-4">
+				<div class="single-service-box">
+					<div class="service-content">
+						<div class="service-icon">
+							<img style="width: 180px; height:auto;" src="https://www.sevenbuilderslv.com/wp-content/themes/sd-child/images/logo.svg" alt="Seven Builders LV Logo">
+						</div>
+						<div class="service-title">
+							<h2>Seven Builders LV</h2>
+							<p>Seven Builders LV is a premier construction and renovation company in Las Vegas, delivering exceptional craftsmanship and innovative building solutions for residential and commercial projects.</p>
+						</div>
+					</div>
+					<div class="service-button">
+						<a href="https://sevenbuilderslv.com/" target="_blank">Visit Website</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="single-service-box">
+					<div class="service-content">
+						<div class="service-icon">
+							<img style="width: 180px; height:auto;" src="https://auramushroom.com/cdn/shop/files/Aura_logo.png?v=1751824995&width=400" alt="Aura Mushroom Logo">
+						</div>
+						<div class="service-title">
+							<h2>Aura Mushroom</h2>
+							<p>Aura Mushroom offers premium functional mushroom products designed to enhance wellness, boost immunity, and support mental clarity through the power of nature's most beneficial fungi.</p>
+						</div>
+					</div>
+					<div class="service-button">
+						<a href="https://auramushroom.com/" target="_blank">Visit Website</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="single-service-box">
+					<div class="service-content">
+						<div class="service-icon">
+							<img style="width: 180px; height:auto;" src="https://bocamedspalv.com/wp-content/uploads/2025/10/Untitled-design-33.png" alt="Boca Med Spa LV Logo">
+						</div>
+						<div class="service-title">
+							<h2>Boca Med Spa LV</h2>
+							<p>Boca Med Spa LV provides luxurious medical spa services and aesthetic treatments in Las Vegas, offering cutting-edge procedures for beauty, wellness, and rejuvenation in a serene environment.</p>
+						</div>
+					</div>
+					<div class="service-button">
+						<a href="https://bocamedspalv.com/" target="_blank">Visit Website</a>
 					</div>
 				</div>
 			</div>
@@ -807,7 +845,7 @@
 		<div class="row">
 			<div class="col-lg-6 col-md-6">
 				<div class="copy-right">
-					<p>Copyright 2022 All Right Reserved</p>
+					<p>Copyright <span id="copyright-year"></span> All Right Reserved</p>
 				</div>
 			</div>
 			<!-- <div class="col-lg-6 col-md-6">
@@ -933,6 +971,11 @@ $('.aa').counterUp({
         j.preventDefault();
     });
 })(jQuery);
+	</script>
+
+	<script>
+		// Auto-update copyright year
+		document.getElementById('copyright-year').textContent = new Date().getFullYear();
 	</script>
 	
 </body>
